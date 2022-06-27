@@ -21,7 +21,7 @@ public class ManageRegister {
         String check = "";
         for (int i = 0; i < arrayListRegister.size(); i++) {
             if (arrayListRegister.get(i).equals(check)){
-                Menu.main();
+//                Menu.main(scanner);
             }
         }
     }
