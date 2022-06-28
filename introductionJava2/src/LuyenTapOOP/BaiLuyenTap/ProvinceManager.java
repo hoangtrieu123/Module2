@@ -31,11 +31,11 @@ public class ProvinceManager implements Serializable {
         System.out.println("Nhập tên tỉnh: ");
         String name = scanner.nextLine();
         System.out.println("Nhập GDP: ");
-        int gdp = scanner.nextInt();
+        int gdp = Integer.parseInt(scanner.nextLine());
         System.out.println("Nhập vào dân số: ");
-        int popular = scanner.nextInt();
+        int popular = Integer.parseInt(scanner.nextLine());
         System.out.println("Nhập vào diện tích: ");
-        int area = scanner.nextInt();
+        int area = Integer.parseInt(scanner.nextLine());
         return new Province(name, gdp, popular, area, country);
     }
 
@@ -109,6 +109,7 @@ public class ProvinceManager implements Serializable {
             System.out.println((i + 1) + ". " + countries.get(i).getName());
         }
     }
+
     public void searchByProvince(Scanner scanner) {
         System.out.println("Nhập vào tỉnh cần tìm: ");
         scanner.nextLine();
