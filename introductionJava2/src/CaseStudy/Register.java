@@ -1,5 +1,8 @@
 package CaseStudy;
-public class Register {
+
+import java.io.Serializable;
+
+public class Register implements Serializable {
     private String name, password;
 
     public Register(String name, String password) {
